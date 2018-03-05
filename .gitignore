@@ -1,0 +1,7 @@
+vendor/*
+!vendor/vendor.json
+test-crawler
+sync-config.json
+.vscode/*
+*.log
+logs/*.log*
