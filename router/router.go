@@ -10,6 +10,7 @@ import (
 func Routers(e *echo.Echo) {
 
 	e.GET("/", controller.Hello)
+	e.GET("/list", controller.ListProduct)
 	go func() {
 		if err := e.Start(viper.GetString("HTTP_PORT")); err != nil {
 			e.Logger.Info("shutting down the server")
